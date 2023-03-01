@@ -58,13 +58,27 @@ header div:nth-of-type(2) {
 header div:nth-of-type(2) img {
     height: 100%;
     width: 100%;
+    animation-name: people;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes people {
+    from {
+        transform: translateY(2rem);
+    }
+
+    to {
+        transform: translateY(0);
+    }
 }
 
 /* ============How to become a better Designer====================*/
 /* h1 vom div 1 */
 header div:nth-of-type(1) h1 {
     font-size: 4rem;
-    margin: 35vh 0 3vh 0;
+    margin: 30vh 0 3vh 0;
 }
 
 /* p vom div 1 */
@@ -95,7 +109,7 @@ header div:nth-of-type(1) span {
     text-align: center;
     height: 100%;
     width: 100vw;
-    margin-top: 5vh;
+    margin-top: 3vh;
     margin-bottom: 15vh;
 }
 
@@ -212,7 +226,7 @@ article div img {
     display: flex;
     justify-content: center;
     width: 80vw;
-    height: 40vh;
+    height: 30vh;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10vh;
@@ -221,7 +235,7 @@ article div img {
 
 /* illustration left */
 .container .stepImage {
-    height: 40vh;
+    height: 30vh;
 }
 
 /* =============== zweites div mit Text================================*/
@@ -269,8 +283,8 @@ article div img {
     text-align: center;
     flex-direction: column;
     width: 70vw;
-    height: 30vh;
-    margin: 60vh auto 30vh auto;
+    height: 3vh;
+    margin: 15vh auto 20vh auto;
 }
 
 .challenge .input {
